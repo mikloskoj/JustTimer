@@ -7,6 +7,7 @@ from PyQt6.QtMultimedia import QSoundEffect
 import time
 
 
+
 class MenuHover(QLabel):
     def __init__(self, text, parent=None):
         super().__init__(text, parent)
@@ -18,8 +19,6 @@ class MenuHover(QLabel):
         self.setFont(custom_font)
         self.setAlignment(Qt.AlignmentFlag.AlignRight)
         self.setStyleSheet("QLabel:hover { color: white; }")  # Change color on hover
-
-
 
 class CustomTitleBar(StandardTitleBar):
     """ Custom title bar """
@@ -385,7 +384,6 @@ class Window(FramelessWindow):
             self.height() // 2 - length // 2
         )
 
-    
 if __name__ == "__main__":
     app = QApplication(sys.argv)    
     demo = Window()
