@@ -62,7 +62,7 @@ class Window(FramelessWindow):
 # Set a background image for the window
         self.background_label = QLabel(self)
         self.background_label.setScaledContents(True)
-        self.background_image = QPixmap("C:\\Repository\\Storm Cloud Hills\\background4_1100x400.png")
+        self.background_image = QPixmap("background4_1100x400.png")
         self.background_label.setPixmap(self.background_image)
 
         # Calculate the endValue for the animation based on the image width and window width
@@ -79,7 +79,7 @@ class Window(FramelessWindow):
         # --------------------
         self.label_title = QLabel(self)
         self.label_title.setScaledContents(True)
-        self.label_title.setText("Storm cloud hills")
+        self.label_title.setText("JustTimer")
         self.label_title.setAlignment(Qt.AlignmentFlag.AlignCenter)
         label_palette = self.label_title.palette()
         label_palette.setColor(QPalette.ColorRole.WindowText, QColor(255, 255, 255))
@@ -99,13 +99,13 @@ class Window(FramelessWindow):
         self.label_desc.setPalette(label_palette)
         custom_font = QFont("JetBrains Mono", 10)
         self.label_desc.setFont(custom_font)
-        self.label_desc.move(245, 85)
+        self.label_desc.move(35, 85)
 
 
         # --------------------------------------        
         self.label_time = QLabel(self)
         self.label_time.setFont(QFont("JetBrains Mono", 10))
-        self.label_time.setGeometry(375, 83, 100, 20)
+        self.label_time.setGeometry(163, 83, 100, 20)
         self.label_time.setStyleSheet("color: dark gray;") 
 
         self.timer = QTimer(self, interval=1000)
@@ -211,7 +211,7 @@ class Window(FramelessWindow):
         self.timer_button.clicked = 0
 
         self.sound_effect = QSoundEffect()
-        self.sound_effect.setSource(QUrl.fromLocalFile("C:\\Repository\\Storm Cloud Hills\\click.wav"))
+        self.sound_effect.setSource(QUrl.fromLocalFile("click.wav"))
 
         # Button Mouse Hover
         self.start_button.installEventFilter(self)
