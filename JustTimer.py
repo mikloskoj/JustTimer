@@ -1,4 +1,4 @@
-import sys
+import os, sys
 from PyQt6.QtCore import Qt, QTimer, QPropertyAnimation, QPoint, QTimer, QTime, QEvent, QUrl
 from PyQt6.QtGui import QColor, QPixmap, QPalette, QFont, QPainter, QBrush
 from PyQt6.QtWidgets import QApplication, QLabel, QWidget, QVBoxLayout, QPushButton, QMainWindow
@@ -6,6 +6,13 @@ from qframelesswindow import FramelessWindow, TitleBar, StandardTitleBar
 from PyQt6.QtMultimedia import QSoundEffect
 import time
 
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+        
+    return os.path.join(base_path, relative_path)
 
 
 class MenuHover(QLabel):
@@ -62,7 +69,7 @@ class Window(FramelessWindow):
 # Set a background image for the window
         self.background_label = QLabel(self)
         self.background_label.setScaledContents(True)
-        self.background_image = QPixmap("background4_1100x400.png")
+        self.background_image = QPixmap(resource_path("background4_1100x400.png"))
         self.background_label.setPixmap(self.background_image)
 
         # Calculate the endValue for the animation based on the image width and window width
@@ -211,7 +218,7 @@ class Window(FramelessWindow):
         self.timer_button.clicked = 0
 
         self.sound_effect = QSoundEffect()
-        self.sound_effect.setSource(QUrl.fromLocalFile("click.wav"))
+        self.sound_effect.setSource(QUrl.fromLocalFile(resource_path("click.wav")))
 
         # Button Mouse Hover
         self.start_button.installEventFilter(self)
