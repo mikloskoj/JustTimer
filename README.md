@@ -11,20 +11,22 @@ It is just a timer. I have created it to track my learning sessions. It tracks t
 No distractions.
 
 
-Ground breaking features and capabilities.
-You can pause the timer.
-You can clear the timer.
-You can start the timer again.
+Ground breaking features and capabilities:
+- You can start the timer.
+- You can pause the timer.
+- You can reset the timer.
+- You can start the timer again.
 
-Animated background.
-The buttons have a nice sound effect.
+- Animated background.
+- The buttons have a nice sound effect.
+- Frameless window!
 
-
-Give me feedback.
 
 
 FUTURE UPDATES: 
 - ambient music player for focus
 - option to change background.
 
+
+Give me feedback.
 Feel free to colaborate with me on this. :)
