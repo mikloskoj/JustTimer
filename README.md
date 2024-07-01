@@ -21,3 +21,10 @@ The buttons have a nice sound effect.
 
 
 Give me feedback.
+
+
+FUTURE UPDATES: 
+- ambient music player for focus
+- option to change background.
+
+Feel free to colaborate with me on this. :)
