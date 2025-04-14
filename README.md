@@ -4,8 +4,14 @@ JustTimer
 Created by Jan Mikloško
 
 RELEASE v1.5 (13.04.2025)
-Visual overhaul.
-New function to write down tasks and track time spent.
+
+What's New
+Visual Overhaul: Enjoy a refreshed, modern interface designed for improved usability and clarity.
+Task Tracking: Introducing a new feature allowing you to effortlessly write down your tasks and track the time spent on each. Boost your productivity and manage your workflow more effectively.
+
+Improvements
+Enhanced user experience with smoother navigation.
+Optimized performance for quicker load times and better responsiveness.
 
 
 
